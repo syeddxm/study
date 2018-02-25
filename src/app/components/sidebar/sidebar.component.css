@@ -1,0 +1,32 @@
+.navigation-bar {
+    background-color: red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+}
+
+img {
+    border-radius: 100%;
+    width: 33%;
+    margin: auto;
+    display: block;
+}
+
+.user-image {
+    margin-bottom: 2vh;
+}
+
+.firstName {
+    font-weight: bold;
+}
