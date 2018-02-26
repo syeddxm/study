@@ -8,13 +8,11 @@
     </div>
     <p>{{userEmail}}</p>
   </div>
-  <div class="side-menu container">
-    <ul>
-      
-      <li><fa name="graduation-cap" inverse="true"></fa> Home</li>
-      <li><mat-icon fontSet="fa" fontIcon="alarm"></mat-icon>Notifications</li>
-      <li><fa name="bell" inverse="false"></fa>Browse</li>
-      <li><fa name="bell" inverse="false"></fa>Settings</li>
-    </ul>
+  <div class="side-menu">
+    <mat-nav-list>
+        <a mat-list-item *ngFor="let menuoption of menuPages">
+          <span class="col-4 fa {{menuoption.icon}}"></span><p class="col-8">{{menuoption.name}}</p>
+        </a>
+      </mat-nav-list>
   </div>
 </div>

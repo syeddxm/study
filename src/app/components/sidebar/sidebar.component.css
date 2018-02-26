@@ -1,8 +1,10 @@
 .navigation-bar {
-    background-color: red;
+    background-color: rgb(148, 0, 0);
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0;
 }
 
 .user-profile {
@@ -29,4 +31,8 @@ img {
 
 .firstName {
     font-weight: bold;
+}
+
+.side-menu {
+    color: white;
 }

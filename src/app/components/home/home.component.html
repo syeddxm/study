@@ -1,12 +1,27 @@
 <div class="full-height">
   <div class="row full-height">
       <div class="col-3">
-          <app-sidebar></app-sidebar>
+          <app-sidebar class="sticky"></app-sidebar>
       </div>
       <div class="col-9">
-        <div class="starter-template">
-            <h1>StudyInc</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+          <div class="container courses">
+            <mat-grid-list cols="3" gutterSize="50px" rowHeight="450px" class="course-grid"> 
+                <mat-grid-tile *ngFor="let course of courseList">
+                    <mat-card class="course-card">
+                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                        <mat-card-content>
+                            <mat-card-title-group>
+                                <mat-card-title>Title</mat-card-title>
+                                <mat-card-subtitle>Subtitle</mat-card-subtitle>
+                            </mat-card-title-group>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-button>LIKE</button>
+                            <button mat-button>SHARE</button>
+                        </mat-card-actions>
+                    </mat-card>
+                </mat-grid-tile>
+            </mat-grid-list>
         </div>
       </div>
   </div>
