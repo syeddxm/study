@@ -1,0 +1,29 @@
+.notification-card {
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.days-ago {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.days-ago p, .details p {
+    margin-bottom: 0;
+}
+.days-ago p {
+    color: gray;
+}

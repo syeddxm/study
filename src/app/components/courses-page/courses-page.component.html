@@ -1,0 +1,24 @@
+<mat-grid-list cols="3" gutterSize="25px" rowHeight="450px" class="course-grid"> 
+    <mat-grid-tile *ngFor="let course of courseList">
+        <div class="course-section">
+            <mat-card class="course-card">
+                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <div class="course-description">
+                        <p class="course-title">{{course.title}}</p>
+                        <p>{{course.subtitle}}</p>
+                    </div>
+                    <hr>
+                    <div class="course-details">
+                        <mat-card-header>
+                            <img class="avatar" mat-card-avatar src="https://material.angular.io/assets/img/examples/shiba1.jpg">
+                            <mat-card-title>{{course.instructors.length > 1 ? 'Profs.' : 'Prof.'}} {{course.instructors.join(', ')}}</mat-card-title>
+                        </mat-card-header>
+                        <button (click)="openDialog(course.link)" color="primary" mat-raised-button class="next-button">{{course.progress > 0 ? 'Continue' : 'Start'}}</button>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+            <mat-progress-bar class="progress-bar" mode="determinate" value={{course.progress}}></mat-progress-bar>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>

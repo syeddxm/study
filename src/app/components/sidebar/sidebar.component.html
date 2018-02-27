@@ -10,8 +10,9 @@
   </div>
   <div class="side-menu">
     <mat-nav-list>
-        <a mat-list-item *ngFor="let menuoption of menuPages">
-          <span class="col-4 fa {{menuoption.icon}}"></span><p class="col-8">{{menuoption.name}}</p>
+        <a mat-list-item routerLink={{menuoption.link}} routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" *ngFor="let menuoption of menuPages">
+            <span class="col-3 {{menuoption.icon}}"></span>
+            <p>{{menuoption.name}}</p>
         </a>
       </mat-nav-list>
   </div>

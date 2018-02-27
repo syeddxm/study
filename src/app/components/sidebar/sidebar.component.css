@@ -1,5 +1,5 @@
 .navigation-bar {
-    background-color: rgb(148, 0, 0);
+    background-color: #ae373a;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -11,22 +11,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 30%;
     width: 100%;
     text-align: center;
     color: white;
     font-weight: 200;
+    padding: 10%;
 }
 
-img {
+.user-image img{
     border-radius: 100%;
     width: 33%;
     margin: auto;
     display: block;
-}
-
-.user-image {
-    margin-bottom: 2vh;
 }
 
 .firstName {
@@ -35,4 +31,18 @@ img {
 
 .side-menu {
     color: white;
+}
+
+.mat-nav-list a{
+    color: white;
+}
+
+.mat-nav-list a.active {
+    background: white;
+    color: black;
+}
+
+
+.side-menu p {
+    margin: 0;
 }
