@@ -16,9 +16,9 @@ import { CourseUnavailableComponent } from './dialogs/course-unavailable/course-
   declarations: [
     AppComponent,
     HeaderBarComponent,
-    SidebarComponent,
     RoutingComponents,
     CourseUnavailableComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +26,8 @@ import { CourseUnavailableComponent } from './dialogs/course-unavailable/course-
     MaterialModule,
     NgbModule.forRoot(),
     AppRoutingModule,
+  ],
+  exports: [
   ],
   providers: [],
   bootstrap: [ AppComponent, ],

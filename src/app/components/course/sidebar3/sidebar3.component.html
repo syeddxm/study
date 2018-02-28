@@ -1,0 +1,28 @@
+<div class="navigation-bar">
+    <div class="side-menu">
+      <div class="col-3 side-menu-section">
+          <mat-nav-list>
+              <a mat-list-item href={{menuoption.link}} routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" *ngFor="let menuoption of menuPages">
+                  <span class="{{menuoption.icon}}"></span>
+              </a>
+          </mat-nav-list>
+      </div>
+      <div class= "col-9 side-menu-section side-menu-secondary">
+        <div class="nav-top-section">
+          <a href="/course/ielts101/overview"><span class="fa fa-angle-left"></span> Overview</a>
+          <div class="week-description">
+            <p>
+                Week 1: Introduction to
+                IELTS reading 101”
+            </p>
+          </div>
+        </div>
+          <mat-nav-list>
+              <a *ngFor="let menuOption of courseWeekMenuPages" mat-list-item routerLink={{menuOption.link}} routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                  <span class="col-3 {{menuOption.icon}}"></span>
+                  <p>{{menuOption.name}}</p>
+              </a>
+            </mat-nav-list>
+      </div>
+    </div>
+  </div>

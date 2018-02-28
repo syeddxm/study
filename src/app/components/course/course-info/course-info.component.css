@@ -1,0 +1,43 @@
+.course-info-container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.header-video {
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+
+.course-details-container {
+    text-align: center;
+    margin: 5%;
+}
+
+.instructor-info {
+    justify-content: center;
+    margin: 2%;
+}
+
+.see-more {
+    color: #ae373a;
+}
+
+.progress-container {
+    display: flex;
+    margin-top: 5%;
+}
+
+.progress-dates {
+    display: flex;
+}
+
+.progress-bar {
+    margin-bottom: 2vh;
+}
+
+.mat-card {
+    background: #f5f5f5;
+    box-shadow: none !important;
+}

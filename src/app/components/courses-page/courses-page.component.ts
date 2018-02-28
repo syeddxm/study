@@ -21,7 +21,7 @@ export class CoursesPageComponent implements OnInit {
         subtitle: 'Introduction to IELTS Reading',
         instructors: ['Megan Y'],
         progress: 40,
-        link: 'course/ielts101',
+        link: 'course/ielts101/overview',
       },
       {
         title: 'Bus 151',
