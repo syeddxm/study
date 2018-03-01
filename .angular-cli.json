@@ -20,9 +20,13 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../node_modules/font-awesome/scss/font-awesome.scss"
+        "../node_modules/font-awesome/scss/font-awesome.scss",
+        "study-theme.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/my-message.js",
+        "assets/videojs-transcript.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

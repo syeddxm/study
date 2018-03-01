@@ -34,12 +34,12 @@
 }
 
 .side-menu-secondary .mat-nav-list a{
-    color: black;
+    color: #ae373a;;
     margin-bottom: 2vh;
 }
 
 .side-menu-secondary .mat-nav-list a.active{
-    color:#ae373a;
+    color: black;
     pointer-events: none;
 }
 

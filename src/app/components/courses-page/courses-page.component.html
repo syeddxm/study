@@ -1,8 +1,8 @@
-<mat-grid-list cols="3" gutterSize="25px" rowHeight="450px" class="course-grid"> 
+<mat-grid-list cols="3" gutterSize="25px" rowHeight="350px" class="course-grid"> 
     <mat-grid-tile *ngFor="let course of courseList">
         <div class="course-section">
             <mat-card class="course-card">
-                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                <img mat-card-image src="http://lorempixel.com/400/200/business/" alt="Photo of a Shiba Inu">
                 <mat-card-content>
                     <div class="course-description">
                         <p class="course-title">{{course.title}}</p>
@@ -18,7 +18,7 @@
                     </div>
                 </mat-card-content>
             </mat-card>
-            <mat-progress-bar class="progress-bar" mode="determinate" value={{course.progress}}></mat-progress-bar>
+            <mat-progress-bar class="progress-bar" mode="determinate" color="warn" value={{course.progress}}></mat-progress-bar>
         </div>
     </mat-grid-tile>
 </mat-grid-list>

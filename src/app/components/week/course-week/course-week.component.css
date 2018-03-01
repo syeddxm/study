@@ -1,10 +1,10 @@
 .full-height {
-    height: -webkit-fill-available;
+    height: stretch;
 }
 
 .main-section {
-    height: max-content;
-    background-color: rgb(243, 243, 243);
+    height: auto;
+    background-color: #f5f5f5;
     overflow-y: scroll;
 }
 
