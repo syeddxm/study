@@ -1,3 +1,18 @@
-<p>
-  login works!
-</p>
+<h1 *ngIf="authService.user | async">Welcome {{ (authService.user | async)?.email }}!</h1>
+
+<div *ngIf="!(authService.user | async)">
+  <mat-form-field>
+      <input type="text" matInput [(ngModel)]="email" placeholder="email">
+  </mat-form-field>
+  <mat-form-field>
+    <input type="password" matInput [(ngModel)]="password" placeholder="password">
+  </mat-form-field>
+
+  <button (click)="login()" [disabled]="!email || !password">
+    Login
+  </button>
+</div>
+
+<button (click)="logout()" *ngIf="authService.user | async">
+  Logout
+</button>

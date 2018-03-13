@@ -1,16 +1,18 @@
 @import '~@angular/material/theming';
 // Plus imports for other components in your app.
-
+$custom-typography: mat-typography-config(
+  $font-family: 'Muli'
+);
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
-@include mat-core();
+@include mat-core($custom-typography);
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://www.google.com/design/spec/style/color.html
 $my-app-primary: mat-palette($mat-red, 900);
-$my-app-accent:  mat-palette($mat-yellow, A200, A100, A400);
+$my-app-accent:  mat-palette($mat-amber, A400);
 
 // The warn palette is optional (defaults to red).
 $my-app-warn:    mat-palette($mat-orange);

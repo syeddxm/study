@@ -9,7 +9,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-
+import {MatRadioModule} from '@angular/material/radio';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -23,6 +25,9 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
         MatProgressBarModule,
         MatDialogModule,
         MatProgressSpinnerModule,
+        MatRadioModule,
+        MatButtonToggleModule,
+        MatInputModule
     ],
     exports: [
         MatButtonModule,
@@ -33,7 +38,10 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
         MatGridListModule,
         MatProgressBarModule,
         MatDialogModule,
-        MatProgressSpinnerModule
+        MatProgressSpinnerModule,
+        MatRadioModule,
+        MatButtonToggleModule,
+        MatInputModule
     ],
     providers: [ MatIconRegistry],
 })

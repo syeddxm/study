@@ -1,0 +1,31 @@
+.quiz-start-container {
+    padding: 5%;
+    display:flex;
+    justify-content: center;
+}
+
+.quiz-start {
+    padding: 10%;
+}
+
+.quiz-header {
+    text-align: center;
+}
+
+.quiz-time {
+    display: flex;
+    font-weight: 200;
+    justify-content: center;
+    align-content: center;
+}
+
+.quiz-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.start-button{
+    border-radius: 200px;
+    padding: 0px 75px;
+}

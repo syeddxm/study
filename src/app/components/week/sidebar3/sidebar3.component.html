@@ -1,6 +1,6 @@
 <div class="navigation-bar">
     <div class="side-menu">
-      <div class="col-3 side-menu-section">
+      <div class="col-3 side-menu-section side-menu-primary">
           <mat-nav-list>
               <a mat-list-item href={{menuoption.link}} routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" *ngFor="let menuoption of menuPages">
                   <span class="{{menuoption.icon}}"></span>
@@ -18,9 +18,8 @@
           </div>
         </div>
           <mat-nav-list>
-              <a *ngFor="let menuOption of courseWeekMenuPages" mat-list-item routerLink={{menuOption.link}} routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-                  <span class="col-3 {{menuOption.icon}}"></span>
-                  <p>{{menuOption.name}}</p>
+              <a *ngFor="let menuOption of courseWeekMenuPages" mat-list-item routerLink={{menuOption.link}} routerLinkActive="active" [routerLinkActiveOptions]="{ exact: false }">
+                  <div class="icon-text col-9"><mat-icon>{{menuOption.icon}}</mat-icon> <p>{{menuOption.name}}</p></div>
               </a>
             </mat-nav-list>
       </div>

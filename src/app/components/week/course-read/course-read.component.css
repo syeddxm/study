@@ -1,0 +1,38 @@
+.course-read-container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: stretch;
+}
+
+
+.chapter-container {
+    padding: 5%;
+}
+
+.chapter-sec{
+    display: flex;
+}
+
+.topic-intro {
+    color: #42a451;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.sub-1 {
+    color: #4a90e2;
+}
+
+.chapter-num {
+    color: #ffc42a;
+}
+
+.sub-text-1 {
+    font-weight: 200;
+}
+
+
+.highlight {
+    background-color: yellow;
+}

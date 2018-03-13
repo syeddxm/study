@@ -1,0 +1,18 @@
+<div class="quiz-start-container container">
+  <div  class="col-10">
+  <mat-card class="container card-inside">
+    <mat-nav-list>
+        <a mat-list-item routerLink='profile' routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            <p>Profile</p>
+        </a>
+        <a mat-list-item routerLink='password' routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            <p>Password</p>
+        </a>
+      </mat-nav-list>
+      <br />
+    <div class="quiz-button">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-card>
+  </div>
+</div>

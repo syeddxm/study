@@ -54,3 +54,7 @@ img.avatar {
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
 }
+
+:host /deep/ .mat-progress-bar-buffer{
+    background-color: #e0e0e0 !important;
+}

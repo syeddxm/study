@@ -1,0 +1,33 @@
+<div class="quiz-start-container container">
+  <div  class="col-10">
+  <mat-progress-bar class="progress-bar" mode="determinate" color="accent" value=100></mat-progress-bar>
+  <mat-card class="quiz-start">
+    <div class="quiz-header">
+      <h3>Quiz 1</h3>
+      <br />
+      <div class="quiz-time">
+        <mat-icon>access_time</mat-icon><p>&emsp;Friday, September 29th </p>
+      </div>
+      <br />
+    </div>
+    <div class="quiz-details">
+      <p><strong>Quiz Duration</strong></p>
+      <p>
+        60 minutes
+      </p>
+      <br />
+      <p><strong>Instructions</strong></p>
+      <p>
+        To save your responses as you go along, click the “save” button on the left side of the page. 
+        <br/>
+        <br/>
+        NOTE: You only have within the allocated quiz duration to save all your responses. Only saved responses would be submitted once the allocated time is up. 
+      </p>
+    </div>
+    <div class="quiz-button">
+      <br/>
+      <button (click)="openLink()" color="primary" mat-raised-button class="start-button">Start</button>
+    </div>
+  </mat-card>
+  </div>
+</div>

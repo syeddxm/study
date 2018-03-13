@@ -14,35 +14,37 @@
               [routerLinkActiveOptions]="{ exact: true }">
                 <p>Overview</p>
             </a>
-            <a mat-list-item routerLink="week/watch"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }">
-              <p>Week 1</p>
-            </a>
-            <a mat-list-item routerLink=""
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
-            class="disabled">
-              <p>Week 2</p>
-            </a>
-            <a mat-list-item routerLink=""
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
-            class="disabled">
-              <p>Week 3</p>
-            </a>
-            <a mat-list-item routerLink=""
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
-            class="disabled">
-              <p>Week 4</p>
-            </a>
-            <a mat-list-item routerLink=""
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
-            class="disabled">
-              <p>Week 5</p>
-            </a>
+            <div class="week-container">
+                <a mat-list-item routerLink="week/watch"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }">
+                  <p>Week 1 </p>
+                </a>
+                <a mat-list-item routerLink=""
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="disabled">
+                  <p>Week 2</p><mat-icon>lock_outline</mat-icon>
+                </a>
+                <a mat-list-item routerLink=""
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="disabled">
+                  <p>Week 3</p><mat-icon>lock_outline</mat-icon>
+                </a>
+                <a mat-list-item routerLink=""
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="disabled">
+                  <p>Week 4</p><mat-icon>lock_outline</mat-icon>
+                </a>
+                <a mat-list-item routerLink=""
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="disabled">
+                  <p>Week 5 </p><mat-icon>lock_outline</mat-icon>
+                </a>
+              </div>
             <a mat-list-item routerLink=""
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }">
@@ -53,6 +55,7 @@
             [routerLinkActiveOptions]="{ exact: true }">
               <p>Glossary</p>
             </a>
+            
             
           </mat-nav-list>
     </div>

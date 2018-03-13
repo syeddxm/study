@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material';
-import {CourseUnavailableComponent} from '../../dialogs/course-unavailable/course-unavailable.component';
+import {CourseUnavailableComponent} from '../../../dialogs/course-unavailable/course-unavailable.component';
 import { Router } from '@angular/router';
 
 @Component({

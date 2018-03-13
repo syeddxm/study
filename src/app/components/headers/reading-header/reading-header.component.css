@@ -1,0 +1,16 @@
+.book-bar{
+    background-color: #ae373a;
+    display: flex;
+    justify-content: flex-end;
+    height: 5vh;
+}
+
+.icons {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.mat-icon {
+    margin-left: 1em;
+}

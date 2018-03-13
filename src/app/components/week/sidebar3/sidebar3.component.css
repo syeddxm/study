@@ -18,10 +18,14 @@
 .side-menu-section{
     display: flex;
     flex-direction: column;
+}
+
+.side-menu-primary{
     justify-content: center;
 }
 
 .side-menu-secondary {
+    padding-top: 5vh;
     background: #eee;
 }
 
@@ -64,4 +68,16 @@
 
 .week-description {
     margin: 5%;
+}
+
+mat-icon {
+    margin-right: 15px;
+}
+
+.icon-text {
+    display: flex;
+}
+
+:host /deep/ .mat-list-item-content {
+    justify-content: center;
 }

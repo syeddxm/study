@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MaterialModule } from '../../material.module';
+import { MaterialModule } from '../../../material.module';
 
 @Component({
   selector: 'app-sidebar',
@@ -18,10 +18,10 @@ export class SidebarComponent implements OnInit {
     this.lastName = 'Awodiya';
     this.userEmail = 'toluwaawodiya@gmail.com';
     this.menuPages = [
-      {name: 'Courses', icon: 'fa fa-graduation-cap', link: 'courses'},
-      {name: 'Notifications', icon: 'far fa-bell', link: 'notifications'},
-      {name: 'Browse', icon: 'fa fa-search', link: 'browse'},
-      {name: 'Settings', icon: 'fa fa-cog', link: 'settings'}
+      {name: 'Courses', icon: 'fa fa-graduation-cap', link: '/courses'},
+      {name: 'Notifications', icon: 'far fa-bell', link: '/notifications'},
+      {name: 'Browse', icon: 'fa fa-search', link: '/browse'},
+      {name: 'Settings', icon: 'fa fa-cog', link: '/settings'}
     ];
   }
 

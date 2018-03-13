@@ -1,0 +1,45 @@
+.password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fields-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10% 0;
+}
+
+.round-button {
+    background:  #ae373a;
+    color:  white;
+    border-radius:  200px;
+    width: 45%;
+    padding: 2% 5%;
+}
+
+.secondary-button {
+    background: white;
+    color: #ae373a;
+    border: 2px solid #ae373a;
+}
+
+.round-button :hover {
+    background: #722427;
+}
+
+.secondary-button :hover {
+    background: #fafafa;
+}
+
+.top-container {
+    display: flex;
+    width: 100%;
+}

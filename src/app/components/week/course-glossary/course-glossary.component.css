@@ -1,0 +1,45 @@
+.course-read-container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: max-content;
+}
+
+.chapter-container {
+    padding: 5%;
+}
+
+.chapter-sec{
+    display: flex;
+    padding: 5% 0;
+}
+
+.topic-intro {
+    color: #42a451;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+a {
+    color: #ae373a;
+}
+
+.alphabets {
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+p.alphabets{
+    margin-bottom: 0px;
+}
+
+.alphabet-bar-container {
+    background: #fafafa;
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}

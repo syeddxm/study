@@ -1,0 +1,43 @@
+.quiz-start-container {
+    padding: 5%;
+    display:flex;
+    justify-content: center;
+}
+
+
+.quiz-time {
+    display: flex;
+    font-weight: 200;
+    justify-content: center;
+    align-content: center;
+}
+
+.quiz-button {
+}
+
+.card-inside {
+    display: flex;
+    flex-direction:column;
+}
+
+.start-button{
+    border-radius: 200px;
+    padding: 0px 75px;
+}
+
+.feedback-link-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.mat-nav-list{
+    display: flex;
+}
+.mat-nav-list a{
+    color: #ae373a;
+}
+
+.mat-nav-list a.active {
+    color: black;
+}
