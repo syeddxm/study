@@ -1,0 +1,29 @@
+.fields-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.login-header {
+    font-weight: bold;
+}
+
+.login-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-card {
+    border-radius: 10px;
+    padding: 2% 3%;
+}
+
+button {
+    border-radius: 100px;
+}
+
+.button-container {
+    padding: 5% 0;
+}

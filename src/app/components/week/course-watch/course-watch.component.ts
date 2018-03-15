@@ -1,6 +1,10 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import {Observable} from 'rxjs/Observable';
+import { AngularFireStorage } from 'angularfire2/storage';
+
 declare var jwplayer: any;
 declare var transcript: any;
+
 
 @Component({
   selector: 'app-course-watch',
@@ -9,8 +13,11 @@ declare var transcript: any;
 })
 export class CourseWatchComponent implements AfterViewInit {
 
+  videoUrl: Observable<string | null>;
 
-  constructor() {
+  maxRows = 12;
+
+  constructor(private storage: AngularFireStorage) {
 
   }
 
@@ -24,17 +31,20 @@ export class CourseWatchComponent implements AfterViewInit {
 
     const search = document.getElementById('search');
 
-    jwplayer('player').setup({
-      file: 'http://www.openbeelden.nl/files/92/104101.ed_hd.mp4',
-      tracks: [
-        { file: 'https://walsh9.github.io/videojs-transcript/captions/captions.en.vtt', kind: 'captions' }
+    const ref = this.storage.ref('videos/lecture-video.mp4');
+    ref.getDownloadURL().subscribe(videourl => {
+      jwplayer('player').setup({
+        file: videourl,
+        tracks: [
+          { file: 'https://walsh9.github.io/videojs-transcript/captions/captions.en.vtt', kind: 'captions' }
 
-      ],
-      displaytitle: false,
-      height: 400,
-      autostart: false,
-      playbackRateControls: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2],
-    });
+        ],
+        displaytitle: false,
+        height: 400,
+        autostart: false,
+        playbackRateControls: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2],
+      });
+
 
     jwplayer().on('ready', function() {
       const r = new XMLHttpRequest();
@@ -70,7 +80,7 @@ export class CourseWatchComponent implements AfterViewInit {
             let cleanTime: string;
             let cleanMinutes: string;
 
-            const a = Math.round(c.begin / 60);
+            const a = Math.floor(c.begin / 60);
             const b = Math.round(c.begin % 60);
 
             if (b < 10) {
@@ -133,7 +143,8 @@ export class CourseWatchComponent implements AfterViewInit {
       }
     });
 
-    // Hook up interactivity
+  });
+
 
   }
 

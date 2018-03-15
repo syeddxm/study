@@ -1,0 +1,25 @@
+<div class="main-section">
+  <p><strong>Cumulative Average: 78%</strong></p>
+  <mat-list>
+    <div class="week-section" *ngFor="let week of weekGradeList">
+      <div class="grades-card col-9">
+      <mat-card>  
+        <div class="details">
+          <p>Week {{week.week}}</p>
+          <h4>{{week.title}}</h4>
+          <div class="time">
+            <mat-icon>access_time</mat-icon><p> {{week.days}}</p>
+          </div>
+        </div>
+      </mat-card>
+      <mat-progress-bar *ngIf="week.grade" class="progress-bar" mode="determinate" color="accent" value='100'></mat-progress-bar>
+      <mat-progress-bar *ngIf="!week.grade" class="progress-bar" mode="determinate" color="accent" value='0'></mat-progress-bar>
+      </div>
+      <div class="col-3 grades-feedback">
+        <p *ngIf="week.grade"><strong>{{week.grade}}%</strong></p>
+        <button *ngIf="week.grade" color="primary" mat-raised-button class="round-button">See Feedback</button>
+        <button *ngIf="!week.grade" disabled color="primary" mat-raised-button class="round-button">See Feedback</button>
+      </div>
+    </div>
+  </mat-list>
+</div>

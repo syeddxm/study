@@ -1,0 +1,18 @@
+.main-section {
+    padding: 5%;
+    overflow-y: scroll;
+}
+
+.notes-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+.note-body {
+    white-space: pre-wrap;
+}
+
+.note-card {
+    margin-bottom: 10%;
+}

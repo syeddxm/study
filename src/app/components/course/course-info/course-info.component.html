@@ -1,6 +1,6 @@
 <div class="course-info-container">
   <div class="header-video">
-    <video id="video" autoplay="autoplay" preload="none" src="https://youtu.be/MlBIk07N7nc" style="width:50%; height:50%"></video>
+    <video id="video"  preload="none" src="{{videoUrl | async}}" style="width:50%; height:50%" controls controlsList="nofullscreen nodownload"></video>
   </div>
   <div class="course-details-container">
     <mat-card>
@@ -13,26 +13,30 @@
         <mat-card-content>
           <p>This course, IELTS Reading 101, help students prepare for the IELTS exam. The exam consists of three
               reading passages of increasing difficulty, and there is a total of 40 questions to answer. With thousands
-              of learners…<span class="see-more">see more</span></p>
+              of learners...<a [routerLink]="">see more</a></p>
         </mat-card-content>
     </mat-card>
 
     <div class="progress-container">
-      <div class="col-3">
-        <mat-progress-spinner mode="determinate" value="25"></mat-progress-spinner>
+      <div class="col-3 spinner-section">
+          <mat-progress-spinner diameter="150" class="spinner-top" strokeWidth="2" mode="determinate" value="100"></mat-progress-spinner>
+          <mat-progress-spinner diameter="150" color="accent" class="spinner-bottom" strokeWidth="6" mode="determinate" value="25"></mat-progress-spinner>
+          <div class="spinner-text">
+            <h2>25%</h2>
+            <p>done</p>
+          </div>
       </div>
-      <div class="col-9">
+      <div class="col-9 timeline-section">
           <div class="progress-dates">
               <p class="col-2">01/18</p><p class="col-2">Week 1</p><p class="col-2">Week 2</p><p class="col-2">Week 3</p><p class="col-2">Week 4</p><p class="col-2">Week 5</p>
           </div>
           <div class="progress-bar">
-            <mat-progress-bar mode="determinate" value="25"></mat-progress-bar>
+            <mat-progress-bar color="accent" mode="determinate" value="25"></mat-progress-bar>
           </div>
           <div class="progress-dates">
-              <p class="col-2">Start</p><p class="col-2">on track!</p><p class="col-2"></p><p class="col-2"></p><p class="col-2"></p><p class="col-2">Finish</p>
+              <p class="col-2">Start</p><p class="col-2">on track!</p><p class="col-2"></p><p class="col-2"></p><p class="col-2"></p><p class="col-2">Complete</p>
           </div>
       </div>
     </div>
   </div>
-
 </div>

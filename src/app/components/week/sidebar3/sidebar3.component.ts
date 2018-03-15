@@ -20,12 +20,12 @@ export class Sidebar3Component implements OnInit {
     ];
 
     this.courseWeekMenuPages = [
-      {name: 'Watch', disabled: false, link: 'watch', icon: 'video_label'},
-      {name: 'Read', disabled: true, link: 'read', icon: 'chrome_reader_mode'},
-      {name: 'Quiz', disabled: true, link: 'quiz', icon: 'assignment'},
-      {name: 'Notes', disabled: true, link: '', icon: 'insert_comment'},
-      {name: 'Case Study', disabled: true, link: 'case', icon: 'subject'},
-      {name: 'Glossary', disabled: false, link: 'glossary', icon: 'description'},
+      {name: 'Watch', link: 'watch', icon: 'video_label'},
+      {name: 'Read', link: 'read', icon: 'chrome_reader_mode'},
+      {name: 'Quiz',  link: 'quiz', icon: 'assignment'},
+      {name: 'Notes', link: 'notes', icon: 'insert_comment'},
+      {name: 'Case Study', link: 'case', icon: 'subject'},
+      {name: 'Glossary', link: 'glossary', icon: 'description'},
     ];
   }
 

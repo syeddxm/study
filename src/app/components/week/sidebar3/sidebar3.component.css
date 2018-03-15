@@ -44,13 +44,6 @@
 
 .side-menu-secondary .mat-nav-list a.active{
     color: black;
-    pointer-events: none;
-}
-
-.side-menu-secondary .mat-nav-list a.disabled {
-    color: grey;
-    pointer-events: none;
-    cursor: default;
 }
 
 .side-menu p {
@@ -64,6 +57,8 @@
 
 .nav-top-section a{
     color: #ae373a;
+    display: flex;
+    justify-content: center;
 }
 
 .week-description {
@@ -76,8 +71,4 @@ mat-icon {
 
 .icon-text {
     display: flex;
-}
-
-:host /deep/ .mat-list-item-content {
-    justify-content: center;
 }

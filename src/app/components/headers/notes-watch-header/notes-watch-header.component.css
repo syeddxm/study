@@ -1,0 +1,17 @@
+.notes-bar{
+    background-color: #ae373a;
+    display: flex;
+    justify-content: space-between;
+    height: 4vh;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.mat-icon {
+    margin-left: 1em;
+}

@@ -4,11 +4,11 @@ import {CourseUnavailableComponent} from '../../../dialogs/course-unavailable/co
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-courses-page',
-  templateUrl: './courses-page.component.html',
-  styleUrls: ['./courses-page.component.css'],
+  selector: 'app-courses',
+  templateUrl: './courses.component.html',
+  styleUrls: ['./courses.component.css']
 })
-export class CoursesPageComponent implements OnInit {
+export class CoursesComponent implements OnInit {
 
   courseList = [];
 

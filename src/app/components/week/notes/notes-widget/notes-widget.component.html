@@ -1,0 +1,13 @@
+<form>
+  <app-notes-watch-header (clearOutNote)="clearOutNote($event)" [note]="note"></app-notes-watch-header>
+  <div class="notes-form">  
+    <mat-form-field class="notes-full-width" >
+      <input matInput placeholder="Header" [(ngModel)]="note.title" name="title">
+    </mat-form-field>
+
+    <mat-form-field class="notes-full-width">
+      <textarea matInput placeholder="Type your notes" matTextareaAutosize matAutosizeMinRows="{{rows}}"
+      matAutosizeMaxRows="{{rows}}" [(ngModel)]="note.body" name="body"></textarea>
+    </mat-form-field>
+  </div>
+</form>

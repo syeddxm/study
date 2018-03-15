@@ -32,6 +32,13 @@
 .mat-nav-list a.active {
     color: black;
 }
+.side-menu-secondary .mat-nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 .side-menu-secondary .mat-nav-list a{
     color: #ae373a;

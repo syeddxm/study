@@ -18,6 +18,11 @@ import { environment } from '../environments/environment';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './guards/auth.guard';
+import { AngularFireStorageModule } from 'angularfire2/storage';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+import { NoteServiceService } from './services/note-service.service';
+import { CategoryUnavailableComponent } from './dialogs/category-unavailable/category-unavailable.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +31,7 @@ import { AuthGuard } from './guards/auth.guard';
     RoutingComponents,
     CourseUnavailableComponent,
     SidebarComponent,
+    CategoryUnavailableComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,11 +42,13 @@ import { AuthGuard } from './guards/auth.guard';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
+    AngularFireStorageModule,
+    AngularFireDatabaseModule
   ],
   exports: [
   ],
-  providers: [ AuthService, AuthGuard ],
+  providers: [ AuthService, AuthGuard, NoteServiceService ],
   bootstrap: [ AppComponent, ],
-  entryComponents: [CourseUnavailableComponent],
+  entryComponents: [CourseUnavailableComponent, CategoryUnavailableComponent],
 })
 export class AppModule { }

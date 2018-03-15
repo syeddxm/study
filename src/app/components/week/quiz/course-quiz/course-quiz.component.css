@@ -49,7 +49,7 @@
 }
 
 .quiz-circle p.selected, p.selected, span.selected{
-    color: green;
+    color: rgb(0, 200, 0);
 }
 
 .quiz-circle p.not-selected, p.not-selected, span.not-selected{

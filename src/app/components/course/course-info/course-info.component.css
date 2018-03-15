@@ -41,3 +41,42 @@
     background: #f5f5f5;
     box-shadow: none !important;
 }
+
+.spinner-top {
+    position: absolute;
+    z-index: 1;
+}
+
+.spinner-bottom {
+    position: relative;
+    z-index: 2;
+}
+
+.spinner-text {
+    position: absolute;
+    z-index: 3;
+}
+
+.spinner-text h2, .spinner-text p {
+    margin: 0;
+}
+
+.timeline-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.spinner-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:host /deep/ .mat-progress-bar-buffer{
+    background-color: #e0e0e0 !important;
+}
+
+:host /deep/ .spinner-top.mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #e0e0e0 !important;
+}

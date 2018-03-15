@@ -4,10 +4,13 @@
     background: white;
 }
 
-.header-video {
-    display: flex;
-    justify-content: center;
-    background: black;
+.player-container {
+  background: black;
+}
+
+.video {
+  width: 75%;
+  background: black;
 }
 
 .course-watch-container {
@@ -60,6 +63,11 @@
       width: 640px;
       margin-bottom: 20px;
     }
+  }
+
+  .course-video-bottom-container {
+    display: inline-flex;
+    padding: 2% 5%;
   }
   
   .transcript {

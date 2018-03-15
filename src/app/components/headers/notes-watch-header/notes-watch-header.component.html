@@ -1,0 +1,11 @@
+<div class="notes-bar container">
+    <div *ngIf="showCreate();then createButton else updateButton"></div>
+    <ng-template #createButton>
+        <button  mat-button (click)="createNote()">Save</button>
+    </ng-template>
+    <ng-template #updateButton>
+            <button mat-button (click)="updateNote()">Save</button>
+    </ng-template>
+    <button *ngIf="!showCreate()" mat-button (click)="deleteNote()"><mat-icon>delete</mat-icon></button>
+    <div class="icons"><mat-icon>format_bold</mat-icon><mat-icon>format_italics</mat-icon><mat-icon>format_underline</mat-icon></div>
+</div>

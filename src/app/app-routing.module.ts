@@ -10,7 +10,6 @@ import { AuthGuard } from './guards/auth.guard';
 import { HomeComponent } from './components/main/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { NotificationsComponent } from './components/main/notifications/notifications.component';
-import { CoursesPageComponent } from './components/main/courses-page/courses-page.component';
 import { CourseMainComponent } from './components/course/course-main/course-main.component';
 import { CourseInfoComponent } from './components/course/course-info/course-info.component';
 import { Sidebar2Component } from './components/course/sidebar2/sidebar2.component';
@@ -27,14 +26,23 @@ import { CourseGlossaryComponent } from './components/week/course-glossary/cours
 import { SettingsComponent } from './components/main/settings/settings.component';
 import { ProfileComponent } from './components/main/setting/profile/profile.component';
 import { PasswordComponent } from './components/main/setting/password/password.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
+import { NotesWidgetComponent } from './components/week/notes/notes-widget/notes-widget.component';
+import { NotesPageComponent } from './components/week/notes/notes-page/notes-page.component';
+import { NotesWatchHeaderComponent } from './components/headers/notes-watch-header/notes-watch-header.component';
+import { CoursesComponent } from './components/main/courses/courses.component';
+import { NotesEditorComponent } from './components/week/notes/notes-editor/notes-editor.component';
+import { BrowseComponent } from './components/main/browse/browse.component';
+import { GradesComponent } from './components/course/grades/grades.component';
 
 
 const routes: Routes = [
-  {path: 'login', component: LoginComponent },
+  {path: 'login', component: LoginPageComponent },
   {path: '', component: HomeComponent,  canActivate: [AuthGuard], children: [
     {path: '', redirectTo: 'courses', pathMatch: 'full'},
-    {path: 'courses', component: CoursesPageComponent},
+    {path: 'courses', component: CoursesComponent},
     {path: 'notifications', component: NotificationsComponent},
+    {path: 'browse', component: BrowseComponent},
     {path: 'settings', component: SettingsComponent, children: [
       {path: '', redirectTo: 'profile', pathMatch: 'full'},
       {path: 'profile', component: ProfileComponent},
@@ -43,6 +51,8 @@ const routes: Routes = [
   ]},
   {path: 'course/:id', component: CourseMainComponent,  canActivate: [AuthGuard], children: [
     {path: 'overview', component: CourseInfoComponent},
+    {path: 'glossary', component: CourseGlossaryComponent},
+    {path: 'grades', component: GradesComponent},
     ]
   },
   {path: 'course/:id/week', component: CourseWeekComponent,  canActivate: [AuthGuard], children: [
@@ -53,6 +63,9 @@ const routes: Routes = [
     {path: 'quiz/complete', component: CourseQuizEndComponent},
     {path: 'case', component: CourseCaseComponent},
     {path: 'glossary', component: CourseGlossaryComponent},
+    {path: 'notes', component: NotesPageComponent},
+    {path: 'notes/editor/:id', component: NotesEditorComponent},
+    {path: 'notes/new', component: NotesEditorComponent},
     ]
   },
 ];
@@ -67,7 +80,6 @@ const routes: Routes = [
   exports: [RouterModule, RouterLinkActive, Sidebar2Component, Sidebar3Component, ReadingHeaderComponent],
   declarations: [
     NotificationsComponent,
-    CoursesPageComponent,
     TruncatePipe,
     CourseMainComponent,
     CourseInfoComponent,
@@ -84,7 +96,17 @@ const routes: Routes = [
     CourseGlossaryComponent,
     SettingsComponent,
     ProfileComponent,
-    PasswordComponent]
+    PasswordComponent,
+    LoginPageComponent,
+    LoginComponent,
+    NotesWidgetComponent,
+    NotesPageComponent,
+    NotesWatchHeaderComponent,
+    CoursesComponent,
+    NotesEditorComponent,
+    BrowseComponent,
+    GradesComponent
+  ]
 })
 export class AppRoutingModule { }
-export const RoutingComponents = [HomeComponent, LoginComponent];
+export const RoutingComponents = [HomeComponent];

@@ -1,12 +1,15 @@
 <div class="course-video-container">
-        <div class="player-container no-gutters">
-            <div class="col-12">
-                <div id="player"></div>
-            </div>                            
+    <div class="player-container no-gutters">
+        <div class="container video">
+            <div id="player"></div>
+        </div>                            
+    </div>
+    <div class="course-video-bottom-container">
+        <div class="sidebar col-7">
+            <div id="transcript" class="transcript"></div>
         </div>
-        <div class="col-6">
-            <div class="sidebar">
-                <div id="transcript" class="transcript"></div>
-            </div>
-        </div>    
+        <div class="notes col-5">
+            <app-notes-widget [maxRows]='maxRows'></app-notes-widget>
+        </div> 
+    </div>   
 </div>

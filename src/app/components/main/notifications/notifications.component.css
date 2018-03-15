@@ -27,3 +27,7 @@
 .days-ago p {
     color: gray;
 }
+
+:host /deep/ .mat-progress-bar-buffer{
+    background-color: #e0e0e0 !important;
+}

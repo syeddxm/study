@@ -1,16 +1,16 @@
 <div class="container">
 <mat-list>
   <mat-card class="notification-card" *ngFor="let notification of notificationList">
-        <div class="avatar col-1">
-          <img mat-card-avatar src="https://material.angular.io/assets/img/examples/shiba1.jpg">
-        </div>  
-        <div class="details col-9">
-          <h5>{{notification.title}}</h5>
-          <a href="#">{{notification.subtitle | truncate:[60]}}</a>
-        </div>
-        <div class="days-ago col-2">
-          <p>{{notification.days}}</p>
-        </div>
+    <div class="avatar col-1">
+      <img mat-card-avatar src="https://material.angular.io/assets/img/examples/shiba1.jpg">
+    </div>  
+    <div class="details col-9">
+      <h5>{{notification.title}}</h5>
+      <a [routerLink]="notification.link">{{notification.subtitle | truncate:[60]}}</a>
+    </div>
+    <div class="days-ago col-2">
+      <p>{{notification.days}}</p>
+    </div>
   </mat-card>
 </mat-list>
 </div>

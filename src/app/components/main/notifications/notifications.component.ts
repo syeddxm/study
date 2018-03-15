@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotificationsComponent implements OnInit {
 
-  notifcationList = [];
-
   notificationList = [];
 
   constructor() {
@@ -22,6 +20,7 @@ export class NotificationsComponent implements OnInit {
         title: 'Welcome to Psychology 101',
         subtitle: 'Go to grades',
         days: '2 days ago',
+        link: '/course/ielts/grades'
       },
     ];
   }

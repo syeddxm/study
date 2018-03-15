@@ -8,9 +8,7 @@
 }
 
 .user-profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
     width: 100%;
     text-align: center;
     color: white;
@@ -18,11 +16,22 @@
     padding: 10%;
 }
 
-.user-image img{
+.user-image{
+    display: flex;
+    justify-content: center;
+    padding: 15%;
+}
+
+.user-image .cropcircle{
+    width: 15vh;
+    height: 15vh;
     border-radius: 100%;
-    width: 33%;
-    margin: auto;
-    display: block;
+    background: #eee no-repeat center;
+    background-size: cover;
+}
+
+#sidebar-image {
+    background-image: url(../../../../assets/ink.png);
 }
 
 .firstName {
@@ -45,4 +54,11 @@
 
 .side-menu p {
     margin: 0;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }

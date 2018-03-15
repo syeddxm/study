@@ -1,0 +1,17 @@
+<div class="main-section">
+  <a [routerLink]="['new']">+ Create New </a>
+  <div class="notes-section">
+    <div class="col-4" *ngFor="let note of notes | async" >
+      <a [routerLink]="['editor', note.key]">
+      <mat-card class="note-card">
+          <mat-card-content>
+              <div >
+                  <h3><strong>{{note.title}}</strong></h3>
+                  <p class="note-body">{{note.body | truncate: [400]}}</p>
+              </div>
+          </mat-card-content>
+      </mat-card>
+    </a>
+    </div>
+  </div>
+</div>

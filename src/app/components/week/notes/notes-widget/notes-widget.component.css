@@ -1,0 +1,10 @@
+.notes-form {
+    min-width: 150px;
+    width: 100%;
+    background: #fafafa;
+    padding: 5%;
+  }
+  
+  .notes-full-width {
+    width: 100%;
+  }

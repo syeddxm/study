@@ -1,0 +1,56 @@
+.courses-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-section {
+    margin-bottom: 10%;
+}
+
+img.mat-card-image{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.course-card {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;   
+}
+
+.course-description p {
+    margin: 0;
+}
+
+.instructor {
+    display: flex;
+}
+
+.avatar {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 5%;
+}
+
+.card-title {
+    font-size: 12px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
+}
+
+.round-button {
+    height: 50%;
+    border-radius: 200px;
+}
+
+:host /deep/ .mat-progress-bar-buffer{
+    background-color: #e0e0e0 !important;
+}
+

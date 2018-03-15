@@ -1,7 +1,7 @@
 <div class="navigation-bar">
   <div class="user-profile">
     <div class="user-image">
-      <img src="https://randomuser.me/api/portraits/women/84.jpg">
+        <div id="sidebar-image" class="cropcircle"></div>
     </div>
     <div class="name">
       <h5> <span class="firstName">{{firstName}}</span> {{lastName}} </h5>
@@ -13,6 +13,11 @@
         <a mat-list-item routerLink={{menuoption.link}} routerLinkActive="active" [routerLinkActiveOptions]="{ exact: false }" *ngFor="let menuoption of menuPages">
             <span class="col-3 {{menuoption.icon}}"></span>
             <p>{{menuoption.name}}</p>
+        </a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <a mat-list-item (click)="logout()" routerLink="/login">
+            Sign Out
         </a>
       </mat-nav-list>
   </div>
