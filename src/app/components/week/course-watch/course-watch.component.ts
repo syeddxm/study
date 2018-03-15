@@ -24,7 +24,7 @@ export class CourseWatchComponent implements AfterViewInit {
 
   }
 
-  openDialog(type: string) {
+  openDialog() {
     this.dialog.open(CategoryUnavailableComponent);
   }
 
