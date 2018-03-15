@@ -4,6 +4,9 @@
       <h1 *ngIf="authService.user | async">Welcome {{ (authService.user | async)?.email }}!</h1>
 
       <div *ngIf="!(authService.user | async)" class="fields-container">
+        <div class="logo-container">
+            <img id="login-logo" src="assets/images/studyinc_logo.png">
+        </div>
         <p>Learn anywhere, without an internet connection, and at your own pace.</p>
         <h3 class="login-header">Log In</h3> 
         <mat-form-field>

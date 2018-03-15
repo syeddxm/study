@@ -3,7 +3,7 @@
   <div class="col-4" *ngFor="let course of courseList">
       <div class="course-section">
           <mat-card class="course-card">
-              <img mat-card-image src="http://lorempixel.com/400/200/business/" alt="Photo of a Shiba Inu">
+              <img mat-card-image src="{{course.img}}">
               <mat-card-content>
                   <div class="course-description">
                       <p><strong>{{course.title}}</strong></p>
@@ -12,7 +12,7 @@
                   <hr>
                   <div class="course-details">
                       <div class="instructor">
-                          <img class="avatar" src="https://material.angular.io/assets/img/examples/shiba1.jpg">
+                          <img class="avatar" src="{{course.instructorsimg}}">
                           <p class="card-title"><strong>{{course.instructors.length > 1 ? 'Profs.' : 'Prof.'}} {{course.instructors.join(', ')}}</strong></p>
                       </div>
                       <div class="button-container">
@@ -29,15 +29,18 @@
 <div class="courses-section">
   <div class="mini-card" *ngFor="let category of miniCards" (click)="openDialog('category')">
       <div class="course-section">
-          <mat-card class="course-card">
-              <img mat-card-image src="http://lorempixel.com/400/200/business/" alt="Photo of a Shiba Inu">
-              <mat-card-content>
-                  <div class="course-description">
-                      <p><strong>{{category.title}}</strong></p>
-                      <p>{{category.coursenumber}} courses</p>
-                  </div>
-              </mat-card-content>
-          </mat-card>
+            <mat-card class="course-card">
+                <div class="card-img">
+                    <img src="{{category.img}}" alt="Photo of a Shiba Inu">
+                </div>
+                <hr/>
+                <mat-card-content>
+                    <div class="course-description">
+                        <p><strong>{{category.title}}</strong></p>
+                        <p>{{category.coursenumber}} courses</p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
       </div>
   </div>
 </div>

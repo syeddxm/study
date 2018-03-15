@@ -27,3 +27,11 @@ button {
 .button-container {
     padding: 5% 0;
 }
+
+.login-container {
+    padding: 10% 0
+}
+
+#login-logo {
+    height: 30px;
+}

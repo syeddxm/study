@@ -24,6 +24,17 @@
     margin: 2%;
 }
 
+.listen-button-container {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+}
+
+.listen-button-container button {
+  border-radius: 200px;
+}
+
 .see-more {
     color: #ae373a;
 }

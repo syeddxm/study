@@ -56,6 +56,15 @@ img.mat-card-image{
     margin: 0 1%;
 }
 
+.mini-card .card-img {
+    justify-content: center;
+    display: flex;
+}
+
+.mini-card .card-img img {
+    height: 50px;
+}
+
 :host /deep/ .mat-progress-bar-buffer{
     background-color: #e0e0e0 !important;
 }

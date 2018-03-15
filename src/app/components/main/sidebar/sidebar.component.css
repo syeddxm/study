@@ -13,13 +13,12 @@
     text-align: center;
     color: white;
     font-weight: 200;
-    padding: 10%;
 }
 
 .user-image{
     display: flex;
     justify-content: center;
-    padding: 15%;
+    padding: 10%;
 }
 
 .user-image .cropcircle{
@@ -51,7 +50,6 @@
     color: black;
 }
 
-
 .side-menu p {
     margin: 0;
 }
@@ -61,4 +59,15 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+}
+
+.sidebar-logo {
+    background: rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    height: 125px;
+}
+
+.sidebar-logo img {
+    margin: 0 auto;
 }

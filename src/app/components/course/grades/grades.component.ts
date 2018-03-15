@@ -19,17 +19,17 @@ export class GradesComponent implements OnInit {
       },
       {
         week: 2,
-        title: 'Introduction to IELTS reading exam',
+        title: 'Introduction to IELTS listening exam',
         days: 'Friday, October 6th ',
       },
       {
         week: 3,
-        title: 'Introduction to IELTS reading exam',
+        title: 'Introduction to IELTS writing exam',
         days: 'Friday, October 13th ',
       },
       {
         week: 4,
-        title: 'Introduction to IELTS reading exam',
+        title: 'Introduction to IELTS speaking exam',
         days: 'Friday, October 13th ',
       },
       {

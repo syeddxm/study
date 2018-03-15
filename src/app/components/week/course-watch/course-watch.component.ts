@@ -1,6 +1,9 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import { AngularFireStorage } from 'angularfire2/storage';
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material';
+import {CourseUnavailableComponent} from '../../../dialogs/course-unavailable/course-unavailable.component';
+import {CategoryUnavailableComponent} from '../../../dialogs/category-unavailable/category-unavailable.component';
 
 declare var jwplayer: any;
 declare var transcript: any;
@@ -17,8 +20,12 @@ export class CourseWatchComponent implements AfterViewInit {
 
   maxRows = 12;
 
-  constructor(private storage: AngularFireStorage) {
+  constructor(public dialog: MatDialog, private storage: AngularFireStorage) {
 
+  }
+
+  openDialog(type: string) {
+    this.dialog.open(CategoryUnavailableComponent);
   }
 
 

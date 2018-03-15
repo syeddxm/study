@@ -12,15 +12,17 @@ export class NotificationsComponent implements OnInit {
   constructor() {
     this.notificationList = [
       {
-        title: 'Your feedback for Psychology 101 Quiz 1 is ready',
-        subtitle: 'Welcome to Psychology 101, I am excited to start this journey with you.',
+        title: 'Welcome to IELTS 101',
+        subtitle: 'Welcome to IELTS 101, I am excited to start this journey with you.',
         days: '2 days ago',
+        instructorsimg: 'https://randomuser.me/api/portraits/men/20.jpg',
       },
       {
-        title: 'Welcome to Psychology 101',
+        title: 'Your feedback for IELTS 101 Quiz 1 is ready',
         subtitle: 'Go to grades',
         days: '2 days ago',
-        link: '/course/ielts/grades'
+        link: '/course/ielts/grades',
+        instructorsimg: 'https://randomuser.me/api/portraits/men/20.jpg',
       },
     ];
   }

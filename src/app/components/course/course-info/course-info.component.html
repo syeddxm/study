@@ -1,13 +1,13 @@
 <div class="course-info-container">
   <div class="header-video">
-    <video id="video"  preload="none" src="{{videoUrl | async}}" style="width:50%; height:50%" controls controlsList="nofullscreen nodownload"></video>
+    <video src="{{videoUrl | async}}" poster="assets/images/ieltsposter.png" style="width:50%; height:50%" controls controlsList="nofullscreen nodownload"></video>
   </div>
   <div class="course-details-container">
     <mat-card>
         <mat-card-title>IELTS Reading 101'</mat-card-title>
         <mat-card-subtitle>Introduction to IELTS Reading</mat-card-subtitle>
         <mat-card-header class="instructor-info">
-            <img class="avatar" mat-card-avatar src="https://material.angular.io/assets/img/examples/shiba1.jpg">
+            <img class="avatar" mat-card-avatar src="https://randomuser.me/api/portraits/women/23.jpg">
             <mat-card-title>'Prof. Megan Y'</mat-card-title>
         </mat-card-header>
         <mat-card-content>
@@ -20,9 +20,9 @@
     <div class="progress-container">
       <div class="col-3 spinner-section">
           <mat-progress-spinner diameter="150" class="spinner-top" strokeWidth="2" mode="determinate" value="100"></mat-progress-spinner>
-          <mat-progress-spinner diameter="150" color="accent" class="spinner-bottom" strokeWidth="6" mode="determinate" value="25"></mat-progress-spinner>
+          <mat-progress-spinner diameter="150" color="accent" class="spinner-bottom" strokeWidth="6" mode="determinate" value="20"></mat-progress-spinner>
           <div class="spinner-text">
-            <h2>25%</h2>
+            <h2>20%</h2>
             <p>done</p>
           </div>
       </div>
