@@ -4,7 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import {AppRoutingModule, RoutingComponents} from './app-routing.module';
 import { FormsModule } from '@angular/forms';
-
+import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderBarComponent } from './components/headers/header-bar/header-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -38,6 +38,7 @@ import { CategoryUnavailableComponent } from './dialogs/category-unavailable/cat
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
+    HttpClientModule,
     NgbModule.forRoot(),
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),

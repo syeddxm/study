@@ -59,3 +59,8 @@
 .side-menu p {
     margin: 0;
 }
+
+.side-menu-section a.mini-menu {
+    color: white;
+    margin: 1vh 0;
+}

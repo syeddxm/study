@@ -14,8 +14,7 @@
   <div class="side-menu">
     <mat-nav-list>
         <a mat-list-item routerLink={{menuoption.link}} routerLinkActive="active" [routerLinkActiveOptions]="{ exact: false }" *ngFor="let menuoption of menuPages">
-            <span class="col-3 {{menuoption.icon}}"></span>
-            <p>{{menuoption.name}}</p>
+            <mat-icon>{{menuoption.icon}}</mat-icon><p>&emsp;{{menuoption.name}}</p>
         </a>
       </mat-nav-list>
       <mat-nav-list>

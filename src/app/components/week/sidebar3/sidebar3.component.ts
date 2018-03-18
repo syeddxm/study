@@ -13,20 +13,21 @@ export class Sidebar3Component implements OnInit {
 
   constructor() {
     this.menuPages = [
-      {name: 'Courses', icon: 'fa fa-graduation-cap', link: '/courses'},
-      {name: 'Notifications', icon: 'far fa-bell', link: '/notifications'},
-      {name: 'Browse', icon: 'fa fa-search', link: '/browse'},
-      {name: 'Settings', icon: 'fa fa-cog', link: '/settings'}
+      {name: 'Courses', icon: 'school', link: '/courses'},
+      {name: 'Notifications', icon: 'notifications_none', link: 'notifications'},
+      {name: 'Browse', icon: 'search', link: '/browse'},
+      {name: 'Settings', icon: 'settings', link: '/settings'}
     ];
 
     this.courseWeekMenuPages = [
-      {name: 'Watch', link: 'watch', icon: 'video_label'},
-      {name: 'Read', link: 'read', icon: 'chrome_reader_mode'},
-      {name: 'Quiz',  link: 'quiz', icon: 'assignment'},
-      {name: 'Notes', link: 'notes', icon: 'insert_comment'},
-      {name: 'Case Study', link: 'case', icon: 'subject'},
-      {name: 'Glossary', link: 'glossary', icon: 'description'},
+      {name: 'Watch', link: 'watch', icon: 'w_study'},
+      {name: 'Read', link: 'read', icon: 'r_study'},
+      {name: 'Quiz',  link: 'quiz', icon: 'q_study'},
+      {name: 'Notes', link: 'notes', icon: 'n_study'},
+      {name: 'Case Study', link: 'case', icon: 'c_study'},
+      {name: 'Glossary', link: 'glossary', icon: 'g_study'},
     ];
+
   }
 
   ngOnInit() {

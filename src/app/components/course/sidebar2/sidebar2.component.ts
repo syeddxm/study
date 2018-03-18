@@ -19,10 +19,10 @@ export class Sidebar2Component implements OnInit {
     this.lastName = 'Awodiya';
     this.userEmail = 'toluwaawodiya@gmail.com';
     this.menuPages = [
-      {name: 'Courses', icon: 'fa fa-graduation-cap', link: '/courses'},
-      {name: 'Notifications', icon: 'far fa-bell', link: 'notifications'},
-      {name: 'Browse', icon: 'fa fa-search', link: '/browse'},
-      {name: 'Settings', icon: 'fa fa-cog', link: '/settings'}
+      {name: 'Courses', icon: 'school', link: '/courses'},
+      {name: 'Notifications', icon: 'notifications_none', link: 'notifications'},
+      {name: 'Browse', icon: 'search', link: '/browse'},
+      {name: 'Settings', icon: 'settings', link: '/settings'}
     ];
     this.courseMenuPages = [
       {name: 'Overview', disabled: false, link: 'overview'},

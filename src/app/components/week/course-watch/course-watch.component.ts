@@ -100,7 +100,7 @@ export class CourseWatchComponent implements AfterViewInit {
 
 
             h += '<div class="transcript-text" id=\'caption' + i + '\'>';
-            h += '<p class="col-3 timestamp">' + cleanTime + '</p><p class="col-9">' + c.text + '</p></div>';
+            h += '<p class="col-1 timestamp">' + cleanTime + '</p><p class="col-11">' + c.text + '</p></div>';
             captions.push(c);
           }
           transcript.innerHTML = h + '</p>';

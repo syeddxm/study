@@ -1,6 +1,5 @@
 <div class="quiz-start-container container">
-  <div  class="col-10">
-  <mat-card class="container card-inside">
+  <mat-card class="container card-inside col-8">
     <mat-nav-list>
         <a mat-list-item routerLink='profile' routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
             <p>Profile</p>
@@ -10,9 +9,8 @@
         </a>
       </mat-nav-list>
       <br />
-    <div class="quiz-button">
+    <div>
       <router-outlet></router-outlet>
     </div>
   </mat-card>
-  </div>
 </div>

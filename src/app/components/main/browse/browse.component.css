@@ -1,7 +1,7 @@
 .courses-section {
     display: flex;
     flex-wrap: wrap;
-    margin: 5% 0;
+    margin: 2% 0;
 }
 
 .course-section {
@@ -24,8 +24,14 @@ img.mat-card-image{
     margin: 0;
 }
 
+.course-details {
+    display: flex;
+    justify-content: space-between;
+}
+
 .instructor {
     display: flex;
+    width: 100%;
 }
 
 .avatar {
@@ -43,11 +49,9 @@ img.mat-card-image{
 .button-container{
     display: flex;
     justify-content: center;
-    padding: 5% 0;
 }
 
 .round-button {
-    height: 50%;
     border-radius: 200px;
 }
 

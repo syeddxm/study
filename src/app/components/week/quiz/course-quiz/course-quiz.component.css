@@ -49,7 +49,7 @@
 }
 
 .quiz-circle p.selected, p.selected, span.selected{
-    color: rgb(0, 200, 0);
+    color: rgb(0, 139, 0);
 }
 
 .quiz-circle p.not-selected, p.not-selected, span.not-selected{
@@ -63,7 +63,9 @@ p.quiz-extra {
 .button-toggle-grp {
     display: flex;
     flex-wrap: wrap;
+    font-weight: bold;
 }
+
 
 .button-toggle-sgl {
     width: 23%;
@@ -85,4 +87,16 @@ p.quiz-extra {
 .quiz-footer-item {
     font-size: 11px;
     display: flex;
+}
+
+.red-box {
+    display: flex;
+}
+
+.red-box p.quiz-extra {
+    margin: auto;
+    padding: 2%;
+    background: red;
+    margin-bottom: 1vh;
+    color: white;
 }

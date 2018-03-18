@@ -1,11 +1,9 @@
 <div class="navigation-bar">
   <div class="side-menu">
     <div class="col-3 side-menu-section">
-      <mat-nav-list>
-          <a mat-list-item href={{menuoption.link}} routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" *ngFor="let menuoption of menuPages">
-              <span class="{{menuoption.icon}}"></span>
+          <a class="mini-menu" href={{menuoption.link}} routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" *ngFor="let menuoption of menuPages">
+              <mat-icon>{{menuoption.icon}}</mat-icon>
           </a>
-      </mat-nav-list>
     </div>
     <div class= "col-9 side-menu-section side-menu-secondary course-nav">
         <mat-nav-list>

@@ -3,10 +3,10 @@
     <div class="col-3">
       <div class="quiz-sidebar container">
         <div class="quiz-header">
-          <p><strong>Total time:&emsp;0:60:00</strong></p>
+          <p><strong>Time left:&emsp;{{timeLeft}}</strong></p>
         </div>
         <div class="quiz-ans">
-          <h2>Questions</h2>
+          <p><strong>Questions</strong></p>
           <p>{{answered}} of 4 answered</p>
           <div class="quiz-circles">
             <div class="quiz-circle" *ngFor="let question of questions">
@@ -24,7 +24,7 @@
     </div>
     <div class="col-9">
       <div class="quiz-header">
-        <p><strong>Time left:&emsp;{{timeLeft}}</strong></p>
+        <p><strong>Total time:&emsp;0:60:00</strong></p>
         <p><strong>Note:</strong> It is recommended that you save your response as you complere each question</p>
       </div>
       <hr>
@@ -33,20 +33,23 @@
           <p><strong>Question {{question.number}}</strong></p> <p class={{question.selected}}><mat-icon>check_circle</mat-icon></p>
         </div>
         <p><em>{{question.q}}</em></p>
-        <p class="quiz-extra">{{question.qe}}</p>
 
         <div *ngIf="!question.type; else buttonTemplate">
-            <mat-radio-group  class="quiz-item" [(ngModel)]="question.selection" (click)="onChoiceChange($event, question)">
-                <mat-radio-button color="primary" *ngFor="let choice of question.choices" [value]="choice.ans">{{choice.ans}}</mat-radio-button>
-            </mat-radio-group>
+          <p class="quiz-extra">{{question.qe}}</p>
+          <mat-radio-group  class="quiz-item" [(ngModel)]="question.selection" (click)="onChoiceChange($event, question)">
+              <mat-radio-button color="primary" *ngFor="let choice of question.choices" [value]="choice.ans">{{choice.ans}}</mat-radio-button>
+          </mat-radio-group>
         </div>
 
         <ng-template #buttonTemplate>
-            <mat-button-toggle-group class="quiz-item" [(ngModel)]="question.selection" (click)="onChoiceChange($event, question)">
-              <div class="button-toggle-grp">
-                <mat-button-toggle class="button-toggle-sgl" *ngFor="let choice of question.choices" [value]="choice.ans">{{choice.ans}}</mat-button-toggle>
-              </div>
-            </mat-button-toggle-group>
+          <div class="red-box">
+            <p class="quiz-extra">{{question.qe}}</p>
+          </div>
+          <mat-button-toggle-group class="quiz-item " [(ngModel)]="question.selection" (click)="onChoiceChange($event, question)">
+            <div class="button-toggle-grp">
+              <mat-button-toggle class="button-toggle-sgl" *ngFor="let choice of question.choices" [value]="choice.ans">{{choice.ans}}</mat-button-toggle>
+            </div>
+          </mat-button-toggle-group>
         </ng-template>
       </div>
       <div class="quiz-button">

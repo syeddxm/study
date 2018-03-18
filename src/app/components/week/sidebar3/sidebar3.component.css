@@ -24,6 +24,12 @@
     justify-content: center;
 }
 
+.side-menu-section a.mini-menu {
+    color: white;
+    margin: 1vh 0;
+}
+
+
 .side-menu-secondary {
     padding-top: 5vh;
     background: #eee;
@@ -71,4 +77,5 @@ mat-icon {
 
 .icon-text {
     display: flex;
+    align-items: center;
 }
