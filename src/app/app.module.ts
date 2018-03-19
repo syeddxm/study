@@ -6,7 +6,6 @@ import {AppRoutingModule, RoutingComponents} from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { HeaderBarComponent } from './components/headers/header-bar/header-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SidebarComponent } from './components/main/sidebar/sidebar.component';
 import { CourseUnavailableComponent } from './dialogs/course-unavailable/course-unavailable.component';
@@ -27,7 +26,6 @@ import { CategoryUnavailableComponent } from './dialogs/category-unavailable/cat
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderBarComponent,
     RoutingComponents,
     CourseUnavailableComponent,
     SidebarComponent,

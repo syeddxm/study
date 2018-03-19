@@ -1,0 +1,17 @@
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.header-img img {
+    height: 3vh;
+}
+
+.header-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

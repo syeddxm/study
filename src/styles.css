@@ -14,6 +14,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   font-weight: 400;
 }
 
+.round-input {
+  border-radius: 400px;
+  padding: 0.5% 2%;
+  border: 1px solid #ae373a;
+}
+
 a {
   color: #ae373a;
 }

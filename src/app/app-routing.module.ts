@@ -34,6 +34,8 @@ import { CoursesComponent } from './components/main/courses/courses.component';
 import { NotesEditorComponent } from './components/week/notes/notes-editor/notes-editor.component';
 import { BrowseComponent } from './components/main/browse/browse.component';
 import { GradesComponent } from './components/course/grades/grades.component';
+import { HeaderBarComponent } from './components/headers/header-bar/header-bar.component';
+import { HeaderMainComponent } from './components/headers/header-main/header-main.component';
 
 
 const routes: Routes = [
@@ -77,7 +79,13 @@ const routes: Routes = [
     CommonModule,
     FormsModule
   ],
-  exports: [RouterModule, RouterLinkActive, Sidebar2Component, Sidebar3Component, ReadingHeaderComponent],
+  exports: [
+    RouterModule,
+    RouterLinkActive,
+    Sidebar2Component,
+    Sidebar3Component,
+    ReadingHeaderComponent,
+  ],
   declarations: [
     NotificationsComponent,
     TruncatePipe,
@@ -105,8 +113,9 @@ const routes: Routes = [
     CoursesComponent,
     NotesEditorComponent,
     BrowseComponent,
-    GradesComponent
+    GradesComponent,
+    HeaderBarComponent,
   ]
 })
 export class AppRoutingModule { }
-export const RoutingComponents = [HomeComponent];
+export const RoutingComponents = [HomeComponent, HeaderMainComponent];

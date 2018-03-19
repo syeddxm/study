@@ -3,9 +3,9 @@
 }
 
 .main-section {
-    height: max-content;
     background-color: #f5f5f5;
     overflow-y: scroll;
+    padding-top: 7vh;
 }
 
 
