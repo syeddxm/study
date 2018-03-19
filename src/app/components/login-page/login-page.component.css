@@ -1,5 +1,5 @@
 .loginContainer {
-    background: darkred;
+    background: url(../../../assets/images/login_bg.png);
     display: flex;
     flex-direction: column;
     justify-content: center;
